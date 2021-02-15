@@ -34,7 +34,7 @@ export class TodosComponent implements OnInit {
     })
   }
   deleteTodoHandler = (id: number) => {
-    let updatedTodo = this.todos.filter((val, index) => index != id)
+    let updatedTodo = this.todos.filter((val, index) => index !== id)
     this.todos = updatedTodo;
   }
   addTodoHandler = () => {

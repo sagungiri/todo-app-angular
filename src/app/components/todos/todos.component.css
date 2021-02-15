@@ -29,7 +29,15 @@
 .todo.done .content {
 	text-decoration: line-through 2px;
 }
-
+.todo .delete {
+    padding: 7px 10px; 
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    background-color: #ec1010;
+    box-shadow: 0 10px 6px -6px rgb(80, 78, 78);
+	color: #FFF;
+}
 .todo-input {
     display: block;
     padding: 10px 15px;
@@ -46,11 +54,8 @@
 	display: block;
 	width: 100%;
 	max-width: 150px;
-	appearance: none;
 	border: none;
 	outline: none;
-	background: none;
-
     background-color: #609202;
     box-shadow: 0 10px 6px -6px rgb(80, 78, 78);
 	color: #FFF;
@@ -60,3 +65,4 @@
 	font-size: 18px;
 	font-weight: 600;
 }
+
