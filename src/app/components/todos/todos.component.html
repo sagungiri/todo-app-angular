@@ -3,10 +3,10 @@
         <input type="text" name='inputTodo' placeholder="Enter Todos" class="todo-input" [(ngModel)]="inputTodo" />
         <input type="submit" value="Add Todo" class="todo-submit" />
     </form>
-    <div class='todo {{todo.completed ? "done" : ""}}' *ngFor="let todo of todos; let i=index">
+    <div class='todo {{todo.completed ? "done" : ""}}' *ngFor="let todo of todos; let index= index">
 
-        <div class="id">{{i}}</div>
-        <div class="content" (click)=" todoToogleHandler(i)">{{todo.content}}</div>
-        <button class="delete" (click)="deleteTodoHandler(i)">Remove</button>
+        <div class="id">{{index}}</div>
+        <div class="content" (click)=" todoToogleHandler(index)">{{todo.content}}</div>
+        <button class="delete" (click)="deleteTodoHandler(index)">Remove</button>
     </div>
 </div>

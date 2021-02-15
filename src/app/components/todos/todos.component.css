@@ -34,6 +34,7 @@
     font-size: 17px;
     font-weight: bold;
     border: none;
+    outline: none;
     background-color: #ec1010;
     box-shadow: 0 10px 6px -6px rgb(80, 78, 78);
 	color: #FFF;
